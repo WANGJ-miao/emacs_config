@@ -1,2 +1,9 @@
-这是我的emacs配置文件
-我是emacs小白, 正在探索中
+This is my emacs config file.
+
+Currently, I run my emacs in WSL.
+
+I was actually a vim user. So I've installed a VI layer in my emacs - EVIL.
+
+# WHY I PREFER EMACS
+
+Because I love lisp :) and find function driven editor attractive.
