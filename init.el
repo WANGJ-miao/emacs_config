@@ -1,7 +1,9 @@
-
+;; -*- lexical-binding: t; -*-
 ;; ============================================================
 ;; Package management
 ;; ============================================================
+
+(setq lexical-binding t)
 
 (require 'package)
 
@@ -47,7 +49,6 @@
 ;; Auto-save files
 (setq auto-save-file-name-transforms
       '((".*" "~/.emacs.d/auto-save-list/" t)))
-
 ;; Fonts
 ;; (add-to-list 'default-frame-alist
 ;;              '(font . "JetBrains Mono-12"))
@@ -133,6 +134,26 @@
               (kbd "SPC w")
               #'save-buffer))
 
+;; ============================================================
+;; Evil
+;; ============================================================
+
+(use-package evil-vimish-fold
+  :ensure t)
+
+;; ============================================================
+;; markdown mode
+;; ============================================================
+
+(use-package markdown-mode
+  :ensure t)
+
+;; ============================================================
+;; magit mode
+;; ============================================================
+
+(use-package magit
+  :ensure t)
 
 ;; ============================================================
 ;; Evil terminal cursor
